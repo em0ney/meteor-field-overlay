@@ -1,0 +1,12 @@
+<template name="fieldOverlay">
+  <div class="field-overlay-backdrop">
+    <form class="field-overlay">
+      {{#if hasLabel}}
+        <label>{{label}}</label><br>
+      {{/if}}
+      <input name="it" type="text" placeholder="{{placeholder}}" value="{{value}}" /> <br>
+      <input type="submit" value="Submit" /><br>
+      <a class="field-overlay-back-link">Back</a>
+    </form>
+  </div>
+</template>
